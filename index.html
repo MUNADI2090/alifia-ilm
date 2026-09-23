@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>আলিফিয়া ইলম | প্রবাসীদের জন্য অনলাইন কুরআন একাডেমি</title>
+<meta name="description" content="প্রবাসে থেকেও হাফেজ উস্তাদের কাছে ওয়ান-টু-ওয়ান শুদ্ধ কুরআন শিক্ষা। প্রাপ্তবয়স্কদের জন্য বিশেষ কোর্স, নারীদের জন্য মহিলা শিক্ষিকা।">
+<meta property="og:title" content="আলিফিয়া ইলম — অনলাইন কুরআন একাডেমি">
+<meta property="og:description" content="প্রবাসে থেকেও শুদ্ধ কুরআন শিখুন। ফ্রি ট্রায়াল ক্লাস।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1D33;
+  --navy-2:#122A49;
+  --gold:#C9A227;
+  --gold-soft:#E4C76B;
+  --steel:#F6F8FB;
+  --line:#E3E8EF;
+  --muted:#5B6B80;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Hind Siliguri',sans-serif;
+  background:#fff;color:var(--navy);
+  line-height:1.85;font-size:16px;overflow-x:hidden;
+}
+.ar{font-family:'Scheherazade New',serif;direction:rtl}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+.alif{
+  width:38px;height:38px;border:1.5px solid var(--gold);border-radius:9px;
+  display:grid;place-items:center;font-family:'Scheherazade New',serif;
+  font-size:26px;color:var(--gold);line-height:1;padding-bottom:4px;
+}
+.brand b{font-size:19px;font-weight:600;letter-spacing:.2px}
+.brand span{display:block;font-size:11px;color:var(--muted);letter-spacing:2px;font-weight:400;margin-top:-6px}
+.nav-links{display:none;gap:26px}
+.nav-links a{color:var(--navy);text-decoration:none;font-size:15px;font-weight:500;opacity:.85}
+.nav-links a:hover{color:var(--gold);opacity:1}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:8px;text-decoration:none;
+  font-weight:600;font-size:15px;transition:.25s;border:1px solid transparent;cursor:pointer;
+}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#b08d1c}
+.btn-ghost{border-color:var(--line);color:var(--navy);background:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-sm{padding:8px 16px;font-size:14px}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);
+  color:#fff;padding:72px 0 80px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"ﺍ";position:absolute;right:-30px;top:20px;font-family:'Scheherazade New',serif;
+  font-size:340px;color:rgba(201,162,39,.07);line-height:1;pointer-events:none;
+}
+.tagline{
+  display:inline-block;border:1px solid rgba(201,162,39,.45);color:var(--gold-soft);
+  padding:6px 16px;border-radius:30px;font-size:13px;letter-spacing:.4px;margin-bottom:22px;
+}
+.hero h1{font-size:34px;font-weight:600;line-height:1.5;margin-bottom:18px;max-width:640px}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero p{font-size:17px;color:#C7D2E0;max-width:560px;font-weight:300;margin-bottom:32px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn-line:hover{border-color:var(--gold);color:var(--gold-soft)}
+
+/* ---------- Trust bar ---------- */
+.trust{background:var(--steel);border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.trust-item{background:var(--steel);padding:26px 16px;text-align:center}
+.trust-item b{display:block;font-size:24px;color:var(--gold);font-weight:600}
+.trust-item span{font-size:13px;color:var(--muted)}
+
+/* ---------- Sections ---------- */
+section{padding:70px 0}
+.eyebrow{color:var(--gold);font-size:13px;letter-spacing:3px;font-weight:600;margin-bottom:10px}
+h2{font-size:27px;font-weight:600;margin-bottom:14px;line-height:1.5}
+.lead{color:var(--muted);max-width:620px;margin-bottom:40px;font-weight:300}
+
+.cards{display:grid;grid-template-columns:1fr;gap:18px}
+.card{
+  border:1px solid var(--line);border-radius:14px;padding:28px 24px;background:#fff;
+  transition:.3s;
+}
+.card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,29,51,.07)}
+.card .num{
+  font-family:'Scheherazade New',serif;font-size:30px;color:var(--gold);line-height:1;margin-bottom:14px;
+}
+.card h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;font-weight:300}
+
+/* ---------- Teacher ---------- */
+.teacher{background:var(--steel)}
+.t-box{
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 26px;
+  border-top:3px solid var(--gold);
+}
+.t-box h3{font-size:22px;margin-bottom:4px}
+.t-box .role{color:var(--gold);font-size:14px;font-weight:600;margin-bottom:18px}
+.t-box ul{list-style:none}
+.t-box li{padding:9px 0 9px 26px;position:relative;color:var(--muted);border-bottom:1px dashed var(--line);font-size:15px}
+.t-box li:last-child{border:none}
+.t-box li::before{content:"✦";position:absolute;left:0;color:var(--gold)}
+
+/* ---------- Steps ---------- */
+.step{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border:none}
+.step .n{
+  flex:0 0 42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold);
+  display:grid;place-items:center;font-weight:600;font-size:16px;
+}
+.step h4{font-size:17px;font-weight:600;margin-bottom:4px}
+.step p{color:var(--muted);font-size:15px;font-weight:300}
+
+/* ---------- CTA ---------- */
+.cta{background:var(--navy);color:#fff;text-align:center;border-radius:0}
+.cta h2{color:#fff}
+.cta p{color:#C7D2E0;font-weight:300;max-width:520px;margin:0 auto 28px}
+
+/* ---------- FAQ ---------- */
+details{border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:12px;background:#fff}
+details[open]{border-color:var(--gold)}
+summary{font-weight:600;cursor:pointer;list-style:none;font-size:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);font-weight:300;font-size:15px;margin-top:10px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--navy);color:#9FB0C4;padding:50px 0 28px;font-size:14px;font-weight:300}
+footer a{color:#C7D2E0;text-decoration:none}
+footer a:hover{color:var(--gold-soft)}
+.f-grid{display:grid;gap:26px;margin-bottom:30px}
+.f-grid h5{color:#fff;font-size:15px;font-weight:600;margin-bottom:12px}
+.f-grid p{margin-bottom:7px}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;text-align:center;font-size:13px}
+
+/* ---------- Float WhatsApp ---------- */
+.float{
+  position:fixed;right:16px;bottom:16px;z-index:60;background:#25D366;color:#fff;
+  padding:13px 20px;border-radius:40px;text-decoration:none;font-weight:600;font-size:15px;
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+}
+
+/* ---------- Reveal ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:.7s ease}
+.rv.in{opacity:1;transform:none}
+
+@media(min-width:760px){
+  .nav-links{display:flex}
+  .hero{padding:110px 0 120px}
+  .hero h1{font-size:46px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .trust-grid{grid-template-columns:repeat(4,1fr)}
+  h2{font-size:33px}
+  .f-grid{grid-template-columns:repeat(3,1fr)}
+  .t-box{padding:44px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">
+      <div class="alif">ﺍ</div>
+      <div><b>আলিফিয়া ইলম</b><span>ALIFIA ILM</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#courses">কোর্স</a>
+      <a href="#teacher">উস্তাদ</a>
+      <a href="#how">কীভাবে চলে</a>
+      <a href="#faq">প্রশ্ন</a>
+    </nav>
+    <a href="#trial" class="btn btn-gold btn-sm">ফ্রি ক্লাস</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="tagline">প্রবাসী ভাই-বোনদের জন্য</div>
+    <h1>প্রবাসে থেকেও শিখুন <em>শুদ্ধ কুরআন</em> — হাফেজ উস্তাদের সরাসরি তত্ত্বাবধানে।</h1>
+    <p>বয়স যতই হোক, শুরু করতে দেরি হয়নি। এখানে কেউ আপনার ভুল নিয়ে হাসবে না — একজন শিক্ষক, একজন ছাত্র, আপনার সুবিধামতো সময়ে।</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/8801963654757?text=আসসালামু%20আলাইকুম,%20আমি%20ফ্রি%20ক্লাস%20নিতে%20চাই" class="btn btn-gold">ফ্রি ট্রায়াল ক্লাস নিন</a>
+      <a href="#how" class="btn btn-line">কীভাবে ক্লাস হয়?</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item"><b>১:১</b><span>ওয়ান-টু-ওয়ান ক্লাস</span></div>
+      <div class="trust-item"><b>হাফেজ</b><span>অভিজ্ঞ উস্তাদ</span></div>
+      <div class="trust-item"><b>২৪/৭</b><span>আপনার টাইম জোনে</span></div>
+      <div class="trust-item"><b>মহিলা</b><span>শিক্ষিকা — বোনদের জন্য</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="eyebrow rv">আমাদের কোর্স</div>
+    <h2 class="rv">যা যা শেখানো হয়</h2>
+    <p class="lead rv">প্রাপ্তবয়স্ক প্রবাসীদের কথা মাথায় রেখে সাজানো — ধীরে, স্পষ্টভাবে, চাপ ছাড়া।</p>
+    <div class="cards">
+      <div class="card rv"><div class="num">ﺍ</div><h3>কুরআন পাঠের ভিত্তি</h3><p>হরফ চেনা, সঠিক উচ্চারণ ও নূরানী পদ্ধতিতে শুরু থেকে পড়া শেখা।</p></div>
+      <div class="card rv"><div class="num">ﺝ</div><h3>বিশুদ্ধ তাজবীদ</h3><p>মাখরাজ, সিফাত, মদ ও গুন্নাহ — নিয়ম মেনে সুন্দর তিলাওয়াত।</p></div>
+      <div class="card rv"><div class="num">ﺹ</div><h3>নামাজ শুদ্ধকরণ</h3><p>সূরা, দোয়া, তাসবীহ ও নামাজের পদ্ধতি — ভুলগুলো ধরে ধরে সংশোধন।</p></div>
+      <div class="card rv"><div class="num">ﺩ</div><h3>দৈনন্দিন দোয়া ও মাসায়েল</h3><p>প্রবাস জীবনে প্রয়োজনীয় দোয়া ও জরুরি ইসলামী জ্ঞান।</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="teacher" id="teacher">
+  <div class="wrap">
+    <div class="eyebrow rv">উস্তাদ পরিচিতি</div>
+    <h2 class="rv">যিনি শেখাবেন</h2>
+    <div class="t-box rv">
+      <h3>হাফেজ মুনাদী হাসান</h3>
+      <div class="role">প্রতিষ্ঠাতা ও প্রধান উস্তাদ</div>
+      <ul>
+        <li>হাফেজে কুরআন — সম্পূর্ণ কুরআন মুখস্থ</li>
+        <li>বেফাক পরীক্ষায় প্রাপ্ত নম্বর ১৯২</li>
+        <li>তাজবীদে ১০০-তে ১০০ নম্বর</li>
+        <li>প্রাপ্তবয়স্ক শিক্ষার্থীদের জন্য বিশেষ ধৈর্যশীল পদ্ধতি</li>
+        <li>বোনদের জন্য পৃথক মহিলা শিক্ষিকার ব্যবস্থা</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow rv">প্রক্রিয়া</div>
+    <h2 class="rv">ভর্তি থেকে ক্লাস — মাত্র ৩ ধাপ</h2>
+    <div class="rv">
+      <div class="step"><div class="n">১</div><div><h4>যোগাযোগ ও সময় নির্ধারণ</h4><p>হোয়াটসঅ্যাপে জানান আপনি কোন দেশে আছেন ও কোন সময়ে ফ্রি থাকেন। আপনার সময় অনুযায়ী ক্লাস সেট হবে।</p></div></div>
+      <div class="step"><div class="n">২</div><div><h4>ফ্রি মূল্যায়ন ক্লাস</h4><p>প্রথম ক্লাসে আপনার পড়া শুনে দেখা হবে আপনি কোন স্তরে আছেন এবং কোন কোন জায়গায় সংশোধন দরকার।</p></div></div>
+      <div class="step"><div class="n">৩</div><div><h4>নিয়মিত ওয়ান-টু-ওয়ান ক্লাস</h4><p>প্রতিদিন নির্ধারিত সময়ে লাইভ ক্লাস, বাড়ির কাজ ও মাসিক অগ্রগতি রিপোর্ট।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="trial">
+  <div class="wrap">
+    <h2>প্রথম ক্লাসটি সম্পূর্ণ ফ্রি</h2>
+    <p>কোনো অগ্রিম টাকা নয়, কোনো চুক্তি নয়। আগে শিখে দেখুন — ভালো লাগলে তবেই এগোবেন।</p>
+    <a href="https://wa.me/8801963654757?text=আসসালামু%20আলাইকুম,%20আমি%20ফ্রি%20ক্লাস%20নিতে%20চাই" class="btn btn-gold">হোয়াটসঅ্যাপে কথা বলুন</a>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow rv">জিজ্ঞাসা</div>
+    <h2 class="rv">সাধারণ প্রশ্ন</h2>
+    <div class="rv">
+      <details><summary>আমার বয়স অনেক, এখন কি শেখা সম্ভব?</summary><p>অবশ্যই। আমাদের বেশিরভাগ শিক্ষার্থীই ৩০ থেকে ৫০ বছর বয়সী। প্রাপ্তবয়স্কদের জন্য আলাদা ধীরগতির পদ্ধতি ব্যবহার করা হয়।</p></details>
+      <details><summary>আমি একদম কিছুই পারি না, আলিফ-বা থেকে শুরু করতে হবে?</summary><p>সমস্যা নেই। একদম শূন্য থেকে শুরু করা শিক্ষার্থীদের জন্যই আমাদের প্রথম কোর্সটি তৈরি।</p></details>
+      <details><summary>ক্লাস কীভাবে হয়?</summary><p>গুগল মিট বা জুমে সরাসরি লাইভ ক্লাস — কোনো রেকর্ড করা ভিডিও নয়। ফোন থাকলেই যথেষ্ট।</p></details>
+      <details><summary>প্রতিদিন কতক্ষণ সময় দিতে হবে?</summary><p>দৈনিক ৩০ মিনিট। ডিউটির সময় অনুযায়ী সকাল বা রাতে সময় নেওয়া যায়।</p></details>
+      <details><summary>আমার স্ত্রী/বোনের জন্য কি ব্যবস্থা আছে?</summary><p>জি, নারী শিক্ষার্থীদের ক্লাস মহিলা শিক্ষিকারা নেন। পর্দার পূর্ণ বিধান মেনে ক্লাস পরিচালিত হয়।</p></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h5>আলিফিয়া ইলম</h5>
+        <p>প্রবাসী ভাই-বোনদের জন্য ব্যক্তিগত তত্ত্বাবধানে অনলাইন কুরআন শিক্ষা প্রতিষ্ঠান।</p>
+      </div>
+      <div>
+        <h5>যোগাযোগ</h5>
+        <p>হোয়াটসঅ্যাপ: <a href="https://wa.me/8801963654757">+880 1963-654757</a></p>
+        <p>ইমেইল: <a href="mailto:Munadihasan213@gmail.com">Munadihasan213@gmail.com</a></p>
+      </div>
+      <div>
+        <h5>সময়সূচি</h5>
+        <p>সকাল ও রাতের ব্যাচ</p>
+        <p>আপনার দেশের সময় অনুযায়ী</p>
+      </div>
+    </div>
+    <div class="copy">© <span id="yr"></span> আলিফিয়া ইলম — সর্বস্বত্ব সংরক্ষিত</div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/8801963654757">হোয়াটসঅ্যাপ</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
